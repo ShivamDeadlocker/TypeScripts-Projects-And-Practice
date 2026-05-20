@@ -1,0 +1,15 @@
+var EmpID;
+var Ename;
+var Salary;
+var HRA = 10000;
+var DA;
+DA = 1000;
+DA = "10000";
+EmpID = 101;
+Ename = "Alina";
+Salary = 10000;
+console.log('EmpID=' + EmpID);
+console.log("Ename=".concat(Ename));
+console.log("Salary=".concat(Salary));
+console.log("DA=" + DA);
+console.log("HRA=" + HRA);

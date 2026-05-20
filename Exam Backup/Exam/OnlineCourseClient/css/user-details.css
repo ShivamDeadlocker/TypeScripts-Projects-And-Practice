@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+  width: 100%;
+  background-color: black;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+/* Cart Count Section */
+#cart-count {
+  background-color: red;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+.container {
+  width: 500px;
+  height: auto;
+  padding: 10px;
+  border: 2px solid burlywood;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 100px auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  width: 95%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px 3px;
+  border: none;
+  background: #3094ff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5ms;
+}
+
+button:hover:not(:disabled) {
+  transform: scale(1.1);
+  background: #0073ee;
+  cursor: pointer;
+}
+
+/* Disabled State */
+button:disabled {
+  background: #a0a0a0; /* Grey = Disabled */
+  color: #e0e0e0;
+  cursor: not-allowed;
+  transform: scale(1);
+  opacity: 0.7;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+footer div {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer div a {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div a:hover {
+  color: rgb(247, 233, 113);
+}
+
+footer div i {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+    padding: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: yellow;
+  }
+}

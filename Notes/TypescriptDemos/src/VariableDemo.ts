@@ -1,0 +1,15 @@
+var EmpID;
+var Ename;
+var Salary:number;
+const HRA=10000;
+let DA;
+DA=1000;
+DA="10000";
+EmpID=101;
+Ename="Alina";
+Salary=10000;
+console.log('EmpID='+EmpID);
+console.log(`Ename=${Ename}`);
+console.log(`Salary=${Salary}`);
+console.log("DA="+DA);
+console.log("HRA="+HRA);

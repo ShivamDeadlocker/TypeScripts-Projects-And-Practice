@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #1e293b;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  width: 100%;
+  background-color: #0f172a;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f8fafc;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* Cart Count Section */
+#cart-count {
+  background-color: #2563eb;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+/* User Details Login/Logout */
+#auth-section button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#auth-section button:hover {
+  background-color: #1d4ed8;
+}
+
+/* ================= MAIN ================= */
+main {
+  background-color: #eaf4ff;
+  padding: 20px;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+/* ================= Brand Image Container ================= */
+.brand-container img {
+  width: 100px;
+  height: 70px;
+  margin: 10px;
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.brand-container img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+/* ================= Product Image Container ================= */
+.product-container {
+  background-color: #ffffff;
+}
+
+.product-container img {
+  width: 160px;
+  height: 110px;
+  margin: 10px;
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.product-container img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.2);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+footer div {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer div a {
+  padding: 4px;
+  color: #f8fafc;
+  transition: 0.5ms;
+}
+
+footer div a:hover {
+  color: #38bdf8;
+}
+
+footer div i {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #38bdf8;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+    padding: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #f8fafc;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #38bdf8;
+  }
+}

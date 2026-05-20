@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InoLap Store</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="Home.html"><i class="fa-solid fa-laptop"></i> InoLap</a>
+          </li>
+          <li><a href="Product.html">Products</a></li>
+          <li><a href="About.html">About</a></li>
+          <li class="adminOption"><a href="Inventory.html">My Inventory</a></li>
+          <li class="adminOption"><a href="User.html">My Users</a></li>
+          <li>
+            <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+              (<span id="cart-count">0</span>)
+            </a>
+          </li>
+          <li id="auth-section"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- BRAND SECTION -->
+      <section id="brand">
+        <h1>Our Best Brands 🔥</h1>
+        <div class="brand-container">
+          <img src="Img/BrandImg/dell.svg" href="Product.html" alt="Dell" />
+          <img src="Img/BrandImg/hp.svg" alt="HP" />
+          <img src="Img/BrandImg/apple.svg" alt="Apple" />
+          <img src="Img/BrandImg/samsung.svg" alt="Samsung" />
+          <img src="Img/BrandImg/lenovo.svg" alt="Lenovo" />
+          <img src="Img/BrandImg/asus.svg" alt="Asus" />
+        </div>
+      </section>
+
+      <!-- FEATURED PRODUCTS -->
+      <section id="featured">
+        <h1>Featured Products 💻</h1>
+
+        <div class="product-container">
+          <img src="Img/FeaturedProd/Dell-fp.jpg" alt="Dell Laptop" />
+          <img src="Img/FeaturedProd/Hp-fp.jpg" alt="HP Laptop" />
+          <img src="Img/FeaturedProd/Apple-fp.jpg" alt="Apple Laptop" />
+          <img src="Img/FeaturedProd/Samsubg-fp.jpg" alt="Samsung Laptop" />
+          <img src="Img/FeaturedProd/Lenevo-fp.jpg" alt="Lenovo Laptop" />
+          <img src="Img/FeaturedProd/Asus-fp.jpg" alt="Asus Laptop" />
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div>
+        © 2026 InoLap Store | Shivam Pro.
+        <a href="About.html">About</a>
+        <a href="About.html">Terms</a>
+        <a href="About.html">Privacy</a>
+        <a href="About.html">Contact Support</a>
+        <a href="About.html">Manage Cookies</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Jquery link (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- <script src="js/common.js"></script> -->
+
+    <!-- JS File Generated Using TS File -->
+    <script type="module" src="dist/common/common.js"></script>
+
+    <!-- <script src="js/Cart.js"></script> -->
+    <!-- <script src="js/Script.js"></script> -->
+  </body>
+</html>

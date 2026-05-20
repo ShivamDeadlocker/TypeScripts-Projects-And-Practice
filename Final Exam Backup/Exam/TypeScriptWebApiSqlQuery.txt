@@ -1,0 +1,250 @@
+--User Type Table Like eg. User, Admin 
+
+--create table UserType 
+--(
+--TypeId int identity(1,1) primary key,
+--TypeName varchar(20) unique not null
+--);
+
+
+--User Table
+
+--create table UserDetails
+--(
+--UserID int identity(1,1) primary key,
+--UserName varchar(20) unique not null,
+--UserEmail varchar(50) unique not null,
+--UserPassword varchar(20) not null,
+--UserConfirmPassword varchar(20) not null,
+--TypeId int references UserType(TypeId) on delete cascade not null
+--);
+
+
+--Category Like Dell, Apple, HP etc.
+
+--create table Category
+--(
+--categoryId int identity(1,1) primary key,
+--categoryName varchar(20) unique not null
+--)
+
+
+--Product Info
+
+--create table ProductTable
+--(
+--ProdID int identity(1,1) primary key,
+--ProdName varchar(50) not null,
+--ProdPrice int not null check(ProdPrice>0),
+--ProdImg varchar(200) not null,
+--ProdDsc varchar(250) not null,
+--ProdQty int not null check(ProdQty>0),
+--categoryId int references Category(categoryId) on delete cascade not null 
+--)
+
+
+--Cart Info
+
+--create table Cart
+--(
+--CartID int identity(1,1) primary key,
+--UserID int references UserDetails(UserID) on delete cascade not null,
+--ProdID int references ProductTable(ProdID) on delete cascade not null,
+--CartQty int not null check(CartQty>0),
+--Price int not null check(Price>0)
+--)
+
+
+--Bill Userwise
+
+--create table Bill
+--(
+--BillID int identity(1,1) primary key,
+--UserID int references UserDetails(UserID) on delete cascade not null
+--)
+
+
+--Bill Product wise
+
+--create table BillDetails
+--(
+--BillDetailsID int identity(1,1) primary key,
+--BillID int references Bill(BillID) on delete cascade not null,
+--ProdID int references ProductTable(ProdID) on delete cascade not null,
+--BillQty int not null check(BillQty>0),BillAmt int not null check(BillAmt>0)
+--);
+
+
+--INSERT INTO UserType (TypeName) VALUES ('Admin');
+--INSERT INTO UserType (TypeName) VALUES ('Student');
+--INSERT INTO UserType (TypeName) VALUES ('Instructor');
+
+
+select * from UserType;
+
+select * from UserDetails;
+
+
+--Data Of Category
+
+--INSERT INTO Category (categoryName) VALUES ('Coursera');
+--INSERT INTO Category (categoryName) VALUES ('Edubca');
+--INSERT INTO Category (categoryName) VALUES ('Packt');
+--INSERT INTO Category (categoryName) VALUES ('Microsoft');
+--INSERT INTO Category (categoryName) VALUES ('Google');
+
+
+
+select * from Category order by categoryId;
+
+
+--Data Of Products
+
+--INSERT INTO ProductTable 
+--(ProdName, ProdPrice, ProdImg, ProdDsc, ProdQty, categoryId)
+--VALUES 
+--('Canva Essentials', 1653, 'Img/FeaturedProd/Coursera-fp.jpg',
+-- 'Prompt Engineering || Event Marketing || Presentations || Video Editing || Canva (Software) || Marketing Materials || Marketing Collateral || Prompt Engineering Tools || Color Theory || 3 - 6 Month',
+-- 100, 1);
+
+
+--INSERT INTO ProductTable 
+--(ProdName, ProdPrice, ProdImg, ProdDsc, ProdQty, categoryId)
+--VALUES 
+--('Microsoft Excel Mastery', 2700, 'Img/FeaturedProd/Microsoft-fp.jpg',
+-- 'Microsoft Excel || Pivot Tables And Charts || Excel Formulas || Spreadsheet Software || Business Reporting || Data Visualization || Data Presentation || Dashboard, Dashboard Creation || 1 - 3 Month ',
+-- 800, 2);
+
+
+--INSERT INTO ProductTable 
+--VALUES 
+--('Mastering Customer Success', 4000, 'Img/FeaturedProd/Packt-fp.jpg',
+-- 'Customer Success Management || Crisis Management || Customer Relationship Building || Customer Retention || Customer Relationship Management (CRM) Software || Customer Relationship Management || 1 - 3 Month',
+-- 150, 3);
+
+
+--INSERT INTO ProductTable 
+--VALUES 
+--('Microsoft 365 with Generative AI', 5000, 'Img/FeaturedProd/Edubca-fp.jpg',
+-- 'Prompt Engineering || Microsoft Copilot || Responsible AI || Presentations || Microsoft Excel || Microsoft Outlook || Data Presentation || Interactive Data Visualization || Microsoft PowerPoint || Microsoft Teams || Data Storytelling || 3 - 6 Month ',
+-- 150, 4);
+
+
+--INSERT INTO ProductTable 
+--VALUES 
+--('Set and Achieve Team Goals', 7000, 'Img/FeaturedProd/Google-fp.jpg',
+-- 'Goal-Oriented || Team Leadership || Drive Engagement || Collaboration || Organizational Effectiveness || Productivity || Resource Management || Overcoming Obstacles',
+-- 200, 5);
+
+
+
+select * from UserDetails;
+
+select * from ProductTable;
+
+select * from Cart;
+
+select * from Bill;
+
+select * from BillDetails;
+
+
+
+Select BillQty, BillAmt from BillDetails where BillID=1--User Type Table Like eg. User, Admin 
+
+--create table UserType 
+--(
+--TypeId int identity(1,1) primary key,
+--TypeName varchar(20) unique not null
+--);
+
+
+--User Table
+
+--create table UserDetails
+--(
+--UserID int identity(1,1) primary key,
+--UserName varchar(20) unique not null,
+--UserEmail varchar(50) unique not null,
+--UserPassword varchar(20) not null,
+--UserConfirmPassword varchar(20) not null,
+--TypeId int references UserType(TypeId) on delete cascade not null
+--);
+
+
+--Category Like Dell, Apple, HP etc.
+
+--create table Category
+--(
+--categoryId int identity(1,1) primary key,
+--categoryName varchar(20) unique not null
+--)
+
+
+--Product Info
+
+--create table ProductTable
+--(
+--ProdID int identity(1,1) primary key,
+--ProdName varchar(50) not null,
+--ProdPrice int not null check(ProdPrice>0),
+--ProdImg varchar(200) not null,
+--ProdDsc varchar(250) not null,
+--ProdQty int not null check(ProdQty>0),
+--categoryId int references Category(categoryId) on delete cascade not null 
+--)
+
+
+--Cart Info
+
+--create table Cart
+--(
+--CartID int identity(1,1) primary key,
+--UserID int references UserDetails(UserID) on delete cascade not null,
+--ProdID int references ProductTable(ProdID) on delete cascade not null,
+--CartQty int not null check(CartQty>0),
+--Price int not null check(Price>0)
+--)
+
+
+--Bill Userwise
+
+--create table Bill
+--(
+--BillID int identity(1,1) primary key,
+--UserID int references UserDetails(UserID) on delete cascade not null
+--)
+
+
+--Bill Product wise
+
+--create table BillDetails
+--(
+--BillDetailsID int identity(1,1) primary key,
+--BillID int references Bill(BillID) on delete cascade not null,
+--ProdID int references ProductTable(ProdID) on delete cascade not null,
+--BillQty int not null check(BillQty>0),BillAmt int not null check(BillAmt>0)
+--);
+
+
+select * from UserType;
+
+select * from UserDetails;
+
+
+select * from Category order by categoryId;
+
+
+select * from UserDetails;
+
+select * from ProductTable;
+
+select * from Cart;
+
+select * from Bill;
+
+select * from BillDetails;
+
+
+
+Select BillQty, BillAmt from BillDetails where BillID=1

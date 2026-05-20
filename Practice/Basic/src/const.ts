@@ -1,0 +1,7 @@
+const PI: number = 3.14159;
+const RADIUS = 1.6;
+
+// PI = 3; // ❌ ERROR — constants cannot be reassigned
+
+let area = PI * RADIUS * RADIUS;
+console.log("Area:", Math.round(area));

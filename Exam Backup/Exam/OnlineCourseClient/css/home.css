@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  width: 100%;
+  background-color: black;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+/* Cart Count Section */
+#cart-count {
+  background-color: red;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+/* User Details Login/Logout */
+#auth-section button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#auth-section button:hover {
+  background-color: darkred;
+}
+
+/* ================= MAIN ================= */
+main {
+  background-color: azure;
+  padding: 20px;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* ================= Brand Image Container ================= */
+.brand-container img {
+  width: 100px;
+  height: 70px;
+  margin: 10px;
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.brand-container img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* ================= Product Image Container ================= */
+.product-container {
+  background-color: white;
+}
+
+.product-container img {
+  width: 160px;
+  height: 110px;
+  margin: 10px;
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.product-container img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+footer div {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer div a {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div a:hover {
+  color: rgb(247, 233, 113);
+}
+
+footer div i {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+    padding: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: yellow;
+  }
+}

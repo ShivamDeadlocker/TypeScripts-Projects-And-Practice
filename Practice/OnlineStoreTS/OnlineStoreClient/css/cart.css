@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  width: 100%;
+  background-color: black;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+#auth-section button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#auth-section button:hover {
+  background-color: darkred;
+}
+
+main {
+  text-align: center;
+}
+main h2 {
+  margin-bottom: 10px;
+}
+
+main section {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+#pay-now{
+  width: 100%;
+  text-decoration: solid;
+  font-size: medium;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: rgb(243, 210, 121);
+  transition: 0.5ms;
+}
+
+#pay-now:hover {
+  background-color: rgb(247, 173, 36);
+  cursor: pointer;
+}
+
+#cart-count {
+  background-color: red;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+#cart-items {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  min-height: 50vh;
+}
+
+/* ================= Card ================= */
+
+.card {
+  width: 250px;
+  height: 380px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  transition: 0.6ms;
+}
+
+.card div {
+  position: absolute;
+  right: 88px;
+  bottom: 20px;
+}
+
+.card div button {
+  margin: 4px;
+
+  background-color: transparent;
+  border-style: none;
+}
+
+.card div button:hover {
+  cursor: pointer;
+}
+
+#remove-btn {
+  position: absolute;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5ms;
+}
+
+.remove-btn:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+footer div {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer div a {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div a:hover {
+  color: rgb(247, 233, 113);
+}
+
+footer div i {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#back-to-top {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(56, 55, 55);
+  padding: 15px;
+  transition: 0.5ms;
+}
+
+#back-to-top a {
+  color: white;
+}
+#back-to-top:hover {
+  background-color: rgb(87, 84, 84);
+  cursor: pointer;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+    padding: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: yellow;
+  }
+}

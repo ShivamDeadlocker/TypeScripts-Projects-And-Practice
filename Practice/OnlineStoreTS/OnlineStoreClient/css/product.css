@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  width: 100%;
+  background-color: black;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+#auth-section button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#auth-section button:hover {
+  background-color: darkred;
+}
+
+#cart-count {
+  background-color: red;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+  margin: 4px;
+}
+/* ================= Filter Area ================= */
+
+aside {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+
+/* ================= Product Container ================= */
+
+#product-container {
+  width: 75%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* ================= Card ================= */
+
+.card {
+  width: 250px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  position: absolute;
+  bottom: 20px;
+  right: 90px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: rgb(247, 205, 90);
+  transition: 0.5s;
+}
+
+.card button:hover {
+  background-color: rgb(247, 173, 36);
+  cursor: pointer;
+}
+
+.card div {
+  position: absolute;
+  right: 88px;
+  bottom: 90px;
+}
+
+.card p {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+}
+
+/* ================= FOOTER ================= */
+
+#back-to-top {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(56, 55, 55);
+  padding: 15px;
+  transition: 0.5ms;
+}
+
+#back-to-top a {
+  color: white;
+}
+
+#back-to-top:hover {
+  background-color: rgb(87, 84, 84);
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+footer div {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer div a {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div a:hover {
+  color: rgb(247, 233, 113);
+}
+
+footer div i {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+    padding: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: yellow;
+  }
+
+  aside {
+    width: 30%;
+    display: block;
+    position: static;
+  }
+
+  .card {
+    display: inline-block;
+  }
+
+  #product-container {
+    width: 100%;
+    text-align: center;
+  }
+}

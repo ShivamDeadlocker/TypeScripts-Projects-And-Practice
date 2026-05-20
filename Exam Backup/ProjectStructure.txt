@@ -1,0 +1,80 @@
+OnlineLaptopStore/
+│
+├── src/
+│   │
+│   ├── auth/
+│   │   └── Auth.ts
+│   │
+│   ├── common/
+│   │   └── common.ts
+│   │
+│   ├── cart/
+│   │   └── Cart.ts
+│   │
+│   ├── inventory/
+│   │   └── Inventory.ts
+│   │
+│   ├── payment/
+│   │   └── Payment.ts
+│   │
+│   ├── products/
+│   │   ├── Product.ts
+│   │   └── ProductsData.ts
+│   │
+│   ├── user/
+│   │   └── UserDetails.ts
+│   │
+│   ├── admin/
+│   │   └── CheckAdmin.ts
+│   │
+│   ├── billing/
+│   │   ├── Bill.ts
+│   │   └── BillDetails.ts
+│   │
+│   ├── models/
+│   │   ├── UserDetails.ts
+│   │   ├── RegisterDto.ts
+│   │   ├── UserType.ts
+│   │   ├── Category.ts
+│   │   ├── ProductTable.ts
+│   │   ├── Cart.ts
+│   │   ├── Bill.ts
+│   │   └── BillDetails.ts
+│   │
+│   ├── services/
+│   │   ├── ApiService.ts
+│   │   ├── AuthService.ts
+│   │   ├── ProductService.ts
+│   │   └── CartService.ts
+│   │
+│   ├── utils/
+│   │   ├── storage.ts
+│   │   ├── constants.ts
+│   │   └── helpers.ts
+│   │
+│   └── main.ts
+│
+│
+├── dist/
+│
+│   (Generated JS Files)
+│
+│
+├── css/
+│
+├── images/
+│
+├── pages/
+│   ├── Home.html
+│   ├── Login.html
+│   ├── Signup.html
+│   ├── Cart.html
+│   └── Product.html
+│
+├── tsconfig.json
+│
+├── package.json
+│
+├── package-lock.json
+│
+└── node_modules/

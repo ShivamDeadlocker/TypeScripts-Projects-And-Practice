@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #1e293b;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  width: 100%;
+  background-color: #0f172a;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f8fafc;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+#auth-section button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#auth-section button:hover {
+  background-color: #1d4ed8;
+}
+
+main {
+  text-align: center;
+  background-color: #eaf4ff;
+  min-height: 80vh;
+  padding-bottom: 20px;
+}
+
+main h2 {
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+main section {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+#pay-now {
+  width: 100%;
+  text-decoration: solid;
+  font-size: medium;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  background-color: #2563eb;
+  color: white;
+  transition: 0.5ms;
+}
+
+#pay-now:hover {
+  background-color: #1d4ed8;
+  cursor: pointer;
+}
+
+#cart-count {
+  background-color: #2563eb;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+#cart-items {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  min-height: 50vh;
+}
+
+/* ================= Card ================= */
+
+.card {
+  width: 250px;
+  height: 500px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card button {
+  position: absolute;
+  bottom: 20px;
+  right: 90px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
+
+.card button:hover {
+  background-color: #dc2626;
+  cursor: pointer;
+}
+
+.card div {
+  position: absolute;
+  right: 88px;
+  bottom: 90px;
+  color: #f59e0b;
+}
+
+.card p {
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+  color: #0f172a;
+  font-weight: bold;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+footer div {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer div a {
+  padding: 4px;
+  color: #f8fafc;
+  transition: 0.5ms;
+}
+
+footer div a:hover {
+  color: #38bdf8;
+}
+
+footer div i {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #38bdf8;
+}
+
+#back-to-top {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #1e293b;
+  padding: 15px;
+  transition: 0.5ms;
+}
+
+#back-to-top a {
+  color: white;
+  text-decoration: none;
+}
+
+#back-to-top:hover {
+  background-color: #334155;
+  cursor: pointer;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+    padding: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #f8fafc;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #38bdf8;
+  }
+}

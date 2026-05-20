@@ -1,0 +1,1 @@
+{"version":3,"file":"customException.js","sourceRoot":"","sources":["../src/customException.ts"],"names":[],"mappings":";AAAA,MAAM,eAAe;IAIjB,YAAY,OAAe;QAH3B,SAAI,GAAW,iBAAiB,CAAC;QAI7B,IAAI,CAAC,OAAO,GAAG,OAAO,CAAC;IAC3B,CAAC;IAED,QAAQ;QACJ,OAAO,GAAG,IAAI,CAAC,IAAI,KAAK,IAAI,CAAC,OAAO,EAAE,CAAC;IAC3C,CAAC;CACJ;AAED,MAAM,IAAI,eAAe,CAAC,mBAAmB,CAAC,CAAC"}

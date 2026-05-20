@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+  width: 100%;
+  background-color: black;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+
+#cart-count {
+  background-color: red;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+#auth-section button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#auth-section button:hover {
+  background-color: darkred;
+}
+
+/* ================= Main Section ================= */
+
+main {
+  text-align: center;
+}
+
+main section {
+  width: 28%;
+  min-height: 250px;
+  border: 1px solid bisque;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 15px;
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  background: linear-gradient(to bottom, rgb(243, 58, 58), blue);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+main section:hover {
+  transform: translateY(-5px);
+}
+
+main section h1 {
+  color: #333;
+}
+
+main section h2 {
+  color: #0f0f0f;
+  font-size: 18px;
+}
+
+/* Promotional Video CSS , Here Iframe is used  */
+#promo {
+  text-align: center;
+  margin: 10px;
+}
+
+#promo iframe {
+  border-radius: 5px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+footer div {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer div a {
+  /* color: white;
+     text-decoration: none; 
+  */
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div a:hover {
+  color: rgb(247, 233, 113);
+}
+
+footer div i {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+    padding: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: yellow;
+  }
+
+  main section {
+    width: auto;
+  }
+
+  #promo iframe {
+    width: auto;
+  }
+}

@@ -1,0 +1,72 @@
+import { getCurrentUser, showMessage, loadAuthUI, CheckAdmin, cartCount, } from "../common/common.js";
+$(() => {
+    loadAuthUI();
+    CheckAdmin();
+    cartCount();
+    loadCourses();
+});
+function loadCourses() {
+    const user = getCurrentUser();
+    if (!user) {
+        showMessage("Please login first!");
+        window.location.href = "Login.html";
+        return;
+    }
+    $.ajax({
+        url: `http://localhost:64467/api/order/enrolledCourses/${user.UserID}`,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            displayCourses(data);
+        },
+        error: function () {
+            showMessage("Error loading courses!");
+        },
+    });
+}
+function displayCourses(data) {
+    const container = $("#course-container");
+    container.html("");
+    if (data.length === 0) {
+        container.append(`
+
+      <h2>
+        No Courses Enrolled!!!
+      </h2>
+    `);
+        return;
+    }
+    data.forEach((course) => {
+        container.append(`
+
+        <div class="card">
+
+          <img
+            src="${course.ProdImg}"
+          >
+
+          <h3>
+            ${course.ProdName}
+          </h3>
+
+          <h4>
+            ${course.ProdDsc}
+          </h4>
+
+          <p>
+            Price:
+            ₹${course.ProdPrice}
+          </p>
+
+          <button
+            class="btnLearn"
+          >
+
+            Start Learning
+
+          </button>
+
+        </div>
+      `);
+    });
+}

@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #1e293b;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+  width: 100%;
+  background-color: #0f172a;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f8fafc;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+/* Cart Count Section */
+
+#cart-count {
+  background-color: #2563eb;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+/* ================= LAYOUT ================= */
+
+.layout {
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* ================= FORM CONTAINER ================= */
+
+.container {
+  width: 500px;
+  height: auto;
+  vertical-align: top;
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-left: 400px;
+}
+
+h2 {
+  text-align: center;
+  color: #0f172a;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+}
+
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+label {
+  display: block;
+  color: #334155;
+  font-weight: 600;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px 3px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.5ms;
+}
+
+button:hover:not(:disabled) {
+  transform: scale(1.05);
+  background: #1d4ed8;
+  cursor: pointer;
+}
+
+/* Disabled State */
+
+button:disabled {
+  background: #a0a0a0;
+  color: #e0e0e0;
+  cursor: not-allowed;
+  transform: scale(1);
+  opacity: 0.7;
+}
+
+/* ================= PRODUCT DISPLAY ================= */
+
+#product-container {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px;
+  text-align: center;
+}
+
+/* ================= CARD ================= */
+
+.card {
+  width: 250px;
+  min-height: 400px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3,
+.card h4,
+.card p {
+  margin: 5px 0;
+}
+
+.card h3 {
+  color: #0f172a;
+}
+
+.card h4 {
+  color: #475569;
+}
+
+.card p {
+  color: #1e293b;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+footer div {
+  display: inline-block;
+  padding: 10px;
+}
+
+footer div a {
+  padding: 4px;
+  color: #f8fafc;
+  transition: 0.5ms;
+}
+
+footer div a:hover {
+  color: #38bdf8;
+}
+
+footer div i {
+  padding: 4px;
+  transition: 0.5ms;
+}
+
+footer div i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #38bdf8;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  nav ul li {
+    display: block;
+    text-align: center;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #f8fafc;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #38bdf8;
+  }
+
+  .container {
+    width: 85%;
+    margin: 20px auto;
+    display: block;
+  }
+
+  #product-container {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+}
